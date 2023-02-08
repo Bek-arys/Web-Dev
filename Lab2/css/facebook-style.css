@@ -1,0 +1,213 @@
+body {
+    background-color: rgb(240, 242, 245);
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-content {
+    margin: 0 auto;
+    padding: 20px 0;
+    position: relative;
+    width: 1000px;
+    height: 904px;
+}
+
+.login-info {
+    width: 500px;
+    height: 456px;
+    position: absolute;
+    margin-top: -250px;
+    margin-left: 572px;
+}
+
+.logo-and-text {
+    margin-top: 172px;
+    display: inline-block;
+}
+
+#below-logo-text {
+    
+    font-size: 30px;
+    font-weight: 540;
+    color: rgb(28, 30, 33);
+    width: 500px;
+    line-height: 32px;
+}
+
+#form-box {
+    background-color: white;
+    width: 500px;
+    height: 348px;
+    border-radius: 6px;
+    padding: 10px 0px 24px 0px;
+    box-shadow: 0px 5px 10px rgb(197, 194, 194);
+}
+
+.input-div {
+    width: 440px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 6px 0px;
+}
+
+.input-box {
+    padding: 14px 10px;
+    height: 30px;
+    width: 420px;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 16px;
+    border: 1px solid rgb(216, 221, 230);
+    border-radius: 6px;
+}
+
+.input-box:focus {
+    outline-color: rgb(24, 119, 242);
+}
+
+.button {
+    display: block;
+    font-weight: 580;
+    border-radius: 6px;
+    height: 58px;
+    color: white;
+    border: 1px solid #ffffff;
+    margin: 8px auto;
+}
+
+.submit-button {
+    font-size: 20px;
+    width: 440px;
+    background-color: rgb(24, 119, 242);
+}
+
+.new-account-button {
+    font-size: 20px;
+    width: 300px;
+    background-color: rgb(66 183 42);
+}
+.submit-button:hover {
+    background-color: rgb(27, 105, 206);
+    transition: 0.1s linear;
+    cursor: pointer;
+}
+
+.new-account-button:hover {
+    background-color: rgb(49, 156, 28);
+    transition: 0.1s linear;
+    cursor: pointer;
+}
+
+.forget-pass {
+    margin-top: 16px;
+    text-align: center;
+}
+
+div a {
+    
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(24, 119, 242);
+    text-decoration: none;
+    cursor: pointer;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+.line {
+    margin: 20px auto;
+    width: 433px;
+    opacity: 0.5;
+}
+
+#new-comp-account {
+    
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 18.76px;
+    height: 37.5px;
+    text-align: center;
+    margin-top: 28px;
+}
+
+.end {
+    background-color: #ffffff;
+    width: 100%;
+}
+
+.foot-content {
+    height: 195px;
+    width: 1114px;
+    line-height: 19px;
+    margin: 0 auto;
+}
+
+.langs {
+    padding-top: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.langs-list {
+    display: flex;
+    list-style-type: none;
+    padding-left: 0px;
+    margin-top: 4px;
+    margin-bottom: 5px;
+}
+
+.line-2 {
+    opacity: 0.5;
+    margin: 2px 0px;
+}
+
+li {
+    padding-right: 10px;
+}
+
+.langs-list a,
+.copyright a ,
+.meta {
+    font-size: 14px;
+    text-align: left;
+    color: #747474;
+}
+
+.plus-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 20px;
+    outline: none;
+    border: none;
+    border: 1px solid #fefefe;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+.plus-icon path {
+    transition: 0.2s ease;
+}
+
+.plus-icon:hover {
+    background-color: #002aff;
+}
+
+.plus-icon:hover path {
+    fill: #fff;
+}
+
+.copyright {
+    position: relative;
+    left: -20px;
+}
+
+.copyright a {
+    padding-left: 20px;
+}
+
+.meta {
+    margin: 18px 0px;
+}

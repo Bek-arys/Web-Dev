@@ -1,0 +1,227 @@
+body {
+    background-color: #fafafa;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 100%;
+    margin: 0;
+}
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 32px;
+    padding-bottom: 32px;
+}
+
+.login-content {
+    align-self: flex-start;
+    width: 370px;
+    height: 400px;
+    margin-top: 10px;
+    background-color: white;
+    border: 1px solid #cbcbcb;
+}
+
+div.login-form img {
+    display: block;
+    width: 174px;
+    margin: 30px auto;
+}
+
+div.login-form img:hover {
+    cursor: pointer;
+}
+
+input {
+    display: block;
+    padding: 10px 20px 10px 10px;
+    width: 240px;
+    font-size: 12px;
+    margin: 10px auto; 
+    border: 1px solid #e5e5e5;
+    background-color: #fafafa; 
+}
+
+button.Log-in {
+    display: block;
+    font-size: 16px;
+    color:#fff;
+    width: 270px;
+    height: 32px;
+    margin: 10px auto;
+    background-color: #4DB5F9;
+    border: 1px solid #4DB5F9;
+    border-radius: 9px;
+}
+
+input::placeholder{
+    color: rgb(177, 177, 177);
+}
+
+.or-option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+hr {
+    width: 100px;
+    height: 2px;
+    background-color: #dbdbdb;
+    border: none;
+    margin: 10px 20px;
+}
+
+div.or {
+    color: #818181;
+    font-size: 18px;
+    padding-bottom: 4px;
+}
+
+.login-with-facebook {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-decoration: none; 
+    color: #2b4364;
+    gap: 5px;
+}
+
+.phone-content {
+    position: relative;
+}
+
+.images-wrapper {
+    position: absolute;
+    top: 24px;
+    left: 142px;
+    width: 233px;
+}
+
+.images-wrapper img {
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.images-wrapper img:first-child {
+    animation: fadeIn 16s ease-in-out infinite;
+}
+
+.images-wrapper img:nth-child(2) {
+    animation: fadeIn 16s ease-in-out infinite 4s;
+}
+
+.images-wrapper img:nth-child(3) {
+    animation: fadeIn 16s ease-in-out infinite 8s;
+}
+
+.images-wrapper img:nth-child(4) {
+    animation: fadeIn 16s ease-in-out infinite 12s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    12.5% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+a>p{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+div.forget-pass {
+    text-align: center;
+    margin-top: 12px;
+}
+
+div.forget-pass a {
+    text-decoration: none;
+    color:#00376b;
+    font-size: 14px;
+}
+
+.no-account {
+    width: 350px;
+    position: relative;
+    top: 50px;
+    padding: 25px 10px;
+    text-align: center;
+    background-color: white;
+    border: 1px solid #cbcbcb;    
+    font-size: 15px;
+}
+
+.no-account a {
+    text-decoration: none;
+    color: #009AF8;
+    font-weight: 550;
+}
+
+.app-install {
+    position: relative;
+    top: 40px;
+    padding: 15px;
+    text-align: center;
+}
+
+div.app-install p {
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.apps {
+    gap: 10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.apps img {
+    height: 40px;
+}
+
+footer {
+    margin-top: 30px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+footer div.info{
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    margin-bottom: 20px;
+}
+
+footer div.info a, footer div.lang-copyright, .lang-select{
+    text-decoration: none;
+    font-size: 12px;
+    color: #8E8E8E;
+}
+
+.lang-select {
+    font-family: Helvetica;
+    background: none;
+    width: 70px;
+    margin-right: 15px;
+    border: none;
+}
+
+.lang-select:focus {
+    outline: none;    
+}

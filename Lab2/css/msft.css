@@ -1,0 +1,64 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 54px;
+    width: 1200px;
+    padding: 0 85px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 23px;
+    height: 49px;
+    width: 500px;
+}
+
+.nav-links a, select.product-select{
+    font-size: 13px;
+    color: #262626;
+    text-decoration: none;
+    border-bottom: 2px solid #fff;
+    padding-top: 4px;
+}
+
+.nav-links a:hover, button.search-button:hover {
+    border-bottom: 2px solid #000;
+}
+
+select.product-select {
+    border: none;
+}
+
+.search-login {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 370px;
+    gap: 20px;
+}
+
+.search-wrapper, .login-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid #fff;
+}
+
+.login-wrapper {
+    gap: 8px;
+}
+
+.search-button, .login-button {
+    font-size: 13px;
+    color: #262626;
+    background: none;
+    border: none;
+}
