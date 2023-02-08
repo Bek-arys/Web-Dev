@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
@@ -5,11 +10,11 @@ body {
 
 .header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    height: 54px;
-    width: 1200px;
-    padding: 0 85px;
+    height: 55px;
+    width: 100%;
+    padding: 0 78px;
 }
 
 .nav-links {
@@ -61,4 +66,68 @@ select.product-select {
     color: #262626;
     background: none;
     border: none;
+}
+
+.bg-img {
+    position: relative;
+}
+
+.bg-text {
+    position: absolute;
+    top: 100px;
+    left: 150px;
+    width: 467px;
+    color: #fff;
+}
+
+.bg-text h1 {
+    font-size: 40px;
+    margin-bottom: 22px;
+    font-weight: 500;
+    line-height: 47px;
+}
+
+.check-pc {
+    display: block;
+    height: 45px;
+    width: 255px;
+    font-size: 17px;
+    background-color: #0067B8;
+    margin-top: 25px;
+    border: none;
+    border-radius: 3px;
+}
+
+button a {
+    color:#fff;
+    border: none;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.microsoft-tools {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+.ms-box {
+    width: 320px;
+    height: 440px;
+}
+
+.ms-box img {
+    width: 290px;
+}
+
+.ms-box a {
+    color: #0067b8;
+    margin-top: 30px;
+}
+
+.ms-box a:hover {
+    text-decoration: none;
+    color: #0067b8;
 }
