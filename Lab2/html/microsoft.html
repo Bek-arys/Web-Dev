@@ -8,9 +8,11 @@
 
     <link rel="stylesheet" href="/Lab2/css/msft.css">
 
+
+    <script src="/Lab2/js/index.js" defer></script>
 </head>
 <body>
-    <div class="header">
+    <div class="header" id="top-page">
         <div class="nav-links">
             <img src="/Lab2/assets/msft-logo.png" alt="Microsoft Logo" height="23px">
             <a href="#">Microsoft 365</a>
@@ -35,7 +37,7 @@
             </div>
 
             <div class="login-wrapper">
-                <button class="login-button">
+                <button class="login-button" type="submit">
                     Войти
                 </button>
                 <img src="/Lab2/assets/msft-login-icon.svg" width="30px">
@@ -52,37 +54,48 @@
                     Разработано для жизни <br> — сегодня и в будущем
                 </h1>
                 Следующее поколение игр. Ваши цели. Друзья и семья. С Windows 11 вы станете еще ближе к тому, что успели полюбить.
-                <button class="check-pc" type="submit"><a href="#">Проверьте, готов ли ваш ПК</a></button>
+                <a href="#" class="check-pc">Проверьте, готов ли ваш ПК</a>
             </div>
         </div>
     </div>
 
 
     <div class="microsoft-tools">
-        
+
         <div class="ms-box">
             <img src="/Lab2/assets/Content-Card-M365-Icon-Bounce-Word-Merch.jpg">
             <h2>Microsoft 365</h2>
             <p>
                 Все, что вам нужно, чтобы достичь большего за меньшее <br>время
             </p>
-            <a href="https://www.microsoft.com/ru-kz/microsoft-365/p/microsoft-365-personal/cfq7ttc0k5bf?icid=mscom_marcom_CPH1a_M365Personal">
-                <span class="one">Для 1 человека</span>
-            </a>
-            <a href="https://www.microsoft.com/ru-kz/microsoft-365/p/microsoft-365-family/cfq7ttc0k5dm?icid=mscom_marcom_CPH1b_M365Family">
-                <span class="tosiz">До 6 человек</span>
-            </a>
+
+            <div class="link-group">
+
+                <span class="link-wrapper">
+                    <a href="https://www.microsoft.com/ru-kz/microsoft-365/p/microsoft-365-personal/cfq7ttc0k5bf?icid=mscom_marcom_CPH1a_M365Personal">Для 1 человека</a>
+                    <span class="arrow">></span>
+                </span>
+    
+                <span class="link-wrapper">
+                    <a href="https://www.microsoft.com/ru-kz/microsoft-365/p/microsoft-365-family/cfq7ttc0k5dm?icid=mscom_marcom_CPH1b_M365Family">До 6 человек</a>
+                    <span class="arrow">></span>
+                </span>
+                
+            </div>
+
+
         </div>
 
         <div class="ms-box">
-            <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-MSFT-CP-Edge?wid=380&hei=213&fit=crop" alt="microsoft-edge">
+            <img src="/Lab2/assets/gldn-MSFT-CP-Edge.jpg" alt="microsoft-edge">
             <h2>Microsoft Edge</h2>
             <p>
                 Потрясающая производительность, больше конфиденциальности, продуктивности и дополнительных возможностей.
             </p>
-            <p>
+            <div class="link-wrapper">
                 <a href="https://www.microsoft.com/ru-ru/edge?form=MI13F3&OCID=MI13F3">Скачать</a>
-            </p>
+                <span class="arrow">></span>
+            </div>
         </div>
         <div class="ms-box">
             <img src="/Lab2/assets/gldn-Soft-CP-OneDriveCampaignRefresh-2.jpg" alt="microsoft onedrive">
@@ -90,9 +103,10 @@
             <p>
                 Сохраняйте свои файлы и фотографии на OneDrive — они будут доступны с любого устройства и где угодно.
             </p>
-            <p>
+            <div class="link-wrapper">
                 <a href="https://www.microsoft.com/ru-ru/microsoft-365/onedrive/online-cloud-storage?icid=mscom_marcom_CPH3a_OneDrive">Подробнее</a>
-            </p>
+                <span class="arrow">></span>
+            </div>
         </div>
 
         <div class="ms-box">
@@ -101,10 +115,58 @@
             <p>
                 Приведите свои заметки и дела в порядок.
             </p>
-            <p>
+            <div class="link-wrapper">
                 <a href="/Lab2/assets/Content-Card-M365-Icon-Bounce-Word-Merch.jpg">Узнать больше</a>
-            </p>
+                <span class="arrow">></span>
+            </div>
         </div>
 
+        <div class="for-ios-android">
+            <img src="/Lab2/assets/gldn-Hero-MSCOM-Outlook-iOS-Android_VP5-1596x600.jpg" alt="for-ios-android">
+
+            <div class="ios-android-text-wrapper">
+                <h1>Outlook для iOS и Android</h1>
+                Будьте на связи. Организовывайте. Успевайте больше.
+                <a href="#" class="download-button">Скачать</a>
+            </div>
+        </div>
+        
+        <!-- Sticky Button that returns to top page  -->
+        <a href="#top-page" class="returner-button">
+            <img src="/Lab2/assets/up-arrow.svg" width="16px" id="up-arrow">
+            Назад наверх
+        </a>
+        
+        <div class="for-business">
+            <h1>Для бизнеса</h1>
+
+            <div class="for-business-box">
+                <img src="/Lab2/assets/gldn-CP-Microsoft-Teams-Commercial.jpg" alt="Microsoft Teams Commercial">
+                <div></div>
+                <div></div>
+                <a href=""></a>
+            </div>
+
+            <div class="for-business-box">
+                <img src="/Lab2/assets/" alt="">
+                <div></div>
+                <div></div>
+                <a href=""></a>
+            </div>
+
+            <div class="for-business-box">
+                <img src="/Lab2/assets/" alt="">
+                <div></div>
+                <div></div>
+                <a href=""></a>
+            </div>
+            <div class="for-business-box">
+                <img src="/Lab2/assets/" alt="">
+                <div></div>
+                <div></div>
+                <a href=""></a>
+            </div>
+
+        </div>
 </body>
 </html>

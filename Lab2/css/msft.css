@@ -3,6 +3,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
@@ -40,6 +44,7 @@ body {
 
 select.product-select {
     border: none;
+    margin-bottom: 3px;
 }
 
 .search-login {
@@ -90,12 +95,19 @@ select.product-select {
 .check-pc {
     display: block;
     height: 45px;
-    width: 255px;
+    width: fit-content;
+    padding: 10px 10px 5px ;
     font-size: 17px;
     background-color: #0067B8;
     margin-top: 25px;
-    border: none;
     border-radius: 3px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+}
+
+.check-pc:hover {
+    background-color: #025ca1;
 }
 
 button a {
@@ -106,28 +118,122 @@ button a {
 }
 
 .microsoft-tools {
-    margin-top: 50px;
+    margin-top: 100px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    
+    justify-content: space-between;
+    padding: 0 76px;
 }
 
-.ms-box {
+.ms-box, .ms-box img {
     width: 320px;
-    height: 440px;
 }
 
-.ms-box img {
-    width: 290px;
+.link-group {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
 }
 
-.ms-box a {
-    color: #0067b8;
-    margin-top: 30px;
+.link-wrapper {
+    display: flex;
+    align-items: center;
+    color: #0067B8;
+    margin-top: 25px;
+    width: fit-content;
+    font-weight: 550;
 }
 
-.ms-box a:hover {
+.link-wrapper .arrow {
+    font-size: 25px;
+    transition: 0.3s ease;
+    position: relative;
+    left: 3px;
+    bottom: 2px;
+}
+
+.link-wrapper a {
     text-decoration: none;
-    color: #0067b8;
+    color: inherit;
+}
+.link-wrapper:hover a {
+    text-decoration: underline;
+}
+
+.link-wrapper:hover .arrow {
+    position: relative;
+    left: 7px;
+}
+
+.for-ios-android {
+    margin: 100px 0;
+    position: relative;
+    font-size: 17px;
+}
+
+.for-ios-android img{
+    max-width: 100%;
+}
+
+.ios-android-text-wrapper {
+    width: 410px;
+    position: absolute;
+    left: 120px;
+    top: 150px;
+}
+
+.ios-android-text-wrapper h1 {
+    margin-bottom: 21px;
+    font-weight: 600;
+    text-align: left;
+    font-size: 40px;
+}
+
+.ios-android-text-wrapper a {
+    display: block;
+    height: 45px;
+    width: fit-content;
+    padding: 10px 15px 5px;
+    font-size: 17px;
+    background-color: #0067B8;
+    margin-top: 25px;
+    border-radius: 3px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+}
+
+.ios-android-text-wrapper a:hover {
+    background-color: #025ca1;
+}
+
+.returner-button {
+    position: fixed;
+    bottom: 14px;
+    right: 14px;
+    padding: 11px;
+    padding-left: 34px;
+    background-color: #d6d6d6;
+    border-radius: 3px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s ease;
+}
+
+#up-arrow {
+    position: absolute;
+    top: 15px;
+    left: 10px;
+}
+
+.returner-button:hover {
+    background-color: #fff;
+}
+
+.returner-button.active {
+    opacity: 1;
+    visibility: visible;
 }

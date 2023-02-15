@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiply numeric property values by 2</title>
+</head>
+<body>
+    <script>
+
+        mltplierBy2 = (obj) => {
+            for (let key in obj) {
+                if (typeof obj[key] == "number") obj[key] *= 2;
+            }
+        }
+
+        let menu = {
+            width: 200,
+            height: 300,
+            title: "My menu"
+        };
+
+        mltplierBy2(menu);
+
+        for (let key in menu) {
+            alert(`${key}: ${menu[key]}`);
+        }
+    </script>
+</body>
+</html>
