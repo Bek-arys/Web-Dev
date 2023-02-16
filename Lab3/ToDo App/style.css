@@ -66,6 +66,13 @@ button#add {
     background-color: #2374F7;
     border-radius: 5px;
     border: 1px solid #F7F7F7;
+    opacity: 0.7;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+button#add:hover {
+    opacity: 1;
 }
 
 .task-list-wrapper {

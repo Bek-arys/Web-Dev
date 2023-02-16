@@ -5,7 +5,10 @@ window.addEventListener('DOMContentLoaded', function() {
     const taskList = this.document.querySelector('.task-list-wrapper');
 
     addBtn.addEventListener('click', function() {
-        const id = generateId();
+        if (taskName.value == "") {
+            return;
+        }
+        const id = ++taskNumber;
         const task = document.createElement('div');
         task.classList.add('task-wrapper');
         task.setAttribute('task-id', id);
@@ -40,8 +43,4 @@ function completeTask(id) {
 function removeTask(id) {
     const div = document.querySelector(`.task-wrapper[task-id="${id}"]`);
     div.remove();
-}
-
-function generateId() {
-    return Math.floor(Math.random() * 100 / Math.random() * 2);
 }
