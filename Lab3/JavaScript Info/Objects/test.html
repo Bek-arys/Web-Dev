@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="saySmth()">CLick me</button>
+    <script>
+        let user = {
+            age: undefined,
+            firstName: undefined,
+            // universal way
+            sayHi: function() {
+                alert("Hello!");
+            },
+            // Simplest way
+            sayBye() {
+                alert("Bye bye!");
+            },
+    
+            infoAge() {
+                // this -> current object
+                alert(`You are ${this.age}.`);
+            },  
+
+            // Стрелочные функции особенные: у них нет своего «собственного» this. Если мы ссылаемся на this внутри такой функции, то оно берётся из внешней «нормальной» функции.
+            
+            sayHiFirstName() {
+                let arrow = () => alert(this.firstName);
+                arrow();
+            },
+
+        /*
+            Функции-конструкторы технически являются обычными функциями. Но есть два соглашения:
+
+            1. Имя функции-конструктора должно начинаться с большой буквы.
+            2. Функция-конструктор должна выполняться только с помощью оператора "new".
+        */
+       
+    }
+        function User(name, firstName) {
+
+            // this = {}; (implicitly)
+
+            this.name = name;
+            this.firstName = firstName;
+            this.age = undefined;
+
+            // return this; (implicitly)
+        }
+    
+        function saySmth() {
+            alert(this) // global object -> window
+        }
+    </script>    
+</body>
+</html>
