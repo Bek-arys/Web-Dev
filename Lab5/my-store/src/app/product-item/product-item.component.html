@@ -1,0 +1,18 @@
+<div *ngIf="product" class="item">
+    <h3 class="text">
+        <a href="{{ product.url }} " target="_blank">
+            {{ product.name }}
+        </a>
+    </h3>
+    <img src="{{ product.image }}">
+    <p>
+        Цена: {{ product.price }} &#8376;
+    </p>
+    <button type="button" class="remove" (click)="Remove()">
+        Удалить
+    </button>
+    <div class="like">
+        <img src="https://cdn-icons-png.flaticon.com/512/20/20664.png" alt="like" class="like-photo" (click)="like()">
+        <span>{{ product.rating }}</span>
+    </div>
+</div>
