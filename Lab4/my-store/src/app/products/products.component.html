@@ -8,10 +8,14 @@
         </a>
     </h3>
     <img [src]="product.image" alt="Product image">
-    <p>{{product.price}} &#8376;</p>
+    <p><span>Цена: </span>{{product.price}} &#8376;</p>
     <p *ngIf="product.description">
         {{ product.description }}
       </p>
+    
+    <button type="button" (click)="onNotify(product.url)">
+        More Info
+    </button>
     <button type="button" (click)="share(product.name,product.url)">
         Share
     </button>

@@ -14,7 +14,7 @@ export class ProductsComponent {
     window.open(`https://t.me/share/url?url=${url}&text=${name}`)
   }
 
-  onNotify() {
-    window.alert('You will be notified when the product goes on sale');
+  onNotify(url: string) {
+    window.open(url);
   }
 }
