@@ -122,7 +122,8 @@ button a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 0 76px;
+    padding-inline: 10px;
+    gap: 20px;
 }
 
 .ms-box, .ms-box img {
