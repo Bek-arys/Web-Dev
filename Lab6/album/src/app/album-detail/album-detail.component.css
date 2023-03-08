@@ -1,0 +1,10 @@
+.loading {
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: space-around;
+}

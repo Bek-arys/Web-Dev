@@ -1,0 +1,10 @@
+<ul class="list-group">
+    <li class="list-group-info" *ngFor="let album of albums">
+        <div class="card" style="width: 13rem; margin-bottom: 20px;">
+            <div class="card-body">
+              <h4 class="card-title"><a [routerLink]="['/albums', album.id]">Album #{{album.id}}</a></h4>
+              <button class="btn btn-danger" (click)="deleteAlbum(albums.indexOf(album))">Delete</button>
+            </div>
+        </div>
+    </li>
+</ul>

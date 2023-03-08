@@ -1,0 +1,15 @@
+div {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    background-color: #568fff;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+span {
+    max-width: 500px;
+}
