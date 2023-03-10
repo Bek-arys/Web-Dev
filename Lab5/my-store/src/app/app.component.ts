@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { categories } from './categories';
+import { products } from './products';
 
 @Component({
   selector: 'app-root',
@@ -11,12 +12,14 @@ export class AppComponent {
   categories;
   show = false;
   categoryName = "";
-
+  products = products;
   constructor() {
     this.categories = categories;
   }
 
   categoryClick(name:string){
+    // this.products = products.filter(item => item.category == name)
+    // this.show = true;
     if(this.categoryName == name){
       this.show = false;
       this.categoryName = "";

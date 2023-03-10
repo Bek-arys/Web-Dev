@@ -21,11 +21,12 @@ export class AlbumDetailComponent implements OnInit{
   saveTitle() {
     this.album.title = this.title;
     this.title = '';
+    
   }
 
   ngOnInit(): void {
     this.activateRoute.paramMap.subscribe((params) => {
-      const id = Number(params.get('id'));
+      const id = +params.get('id')!;
       this._albumsService.getAlbum(id).subscribe((album) => {
         this.album = album;
       });

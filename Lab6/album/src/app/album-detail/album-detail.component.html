@@ -1,24 +1,31 @@
-<div class="spinner-border loading" role="status" *ngIf="!album.id">
-    <span class="sr-only">Loading...</span>
-</div>
 
-<div class="card" style="width: 18rem;" *ngIf="album.id">
-    <div class="card-body">
-      <h3>#{{album.id}}</h3>
-      <h4 class="card-title">{{album.title}}</h4>
-      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae tenetur incidunt natus voluptas dolores veritatis!</p>
-      <div class="input-group mb-3">
-          <div class="input-group-prepend">
-            <button class="input-group-text" id="basic-addon1">Change</button>
-          </div>
-          <input type="text" [(ngModel)]="title" class="form-control" placeholder="Enter new title">
-        </div>
-        <div class="btn-container">
-            <button class="btn btn-secondary" routerLink="/albums">Return back</button>
-            <button class="btn btn-primary" routerLink="/albums/{{album.id}}/photos">Photos</button>
-            <button class="btn btn-success" (click)="saveTitle()" routerLink="/albums">Save</button>
-        </div>
+<div *ngIf="album.id; else elseBlock">
+    <div class="spinner-border loading" role="status" *ngIf="!album.id">
+        <span class="sr-only">Loading...</span>
     </div>
-
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h3>#{{album.id}}</h3>
+          <h4 class="card-title">{{album.title}}</h4>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae tenetur incidunt natus voluptas dolores veritatis!</p>
+          <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <button class="input-group-text" id="basic-addon1">Change</button>
+              </div>
+              <input type="text" [(ngModel)]="title" class="form-control" placeholder="Enter new title">
+          </div>
+            <div class="btn-container">
+                <button class="btn btn-secondary" routerLink="/albums">Return back</button>
+                <button class="btn btn-primary" routerLink="/albums/{{album.id}}/photos">Photos</button>
+                <button class="btn btn-success" (click)="saveTitle()" [routerLink]="['/albums', album.id]">Save</button>
+            </div>
+        </div>
+    
+    </div>
 </div>
+
+<ng-template #elseBlock>
+    <app-not-found></app-not-found>
+</ng-template>
+
 

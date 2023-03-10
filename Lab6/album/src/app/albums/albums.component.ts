@@ -13,6 +13,7 @@ export class AlbumsComponent implements OnInit {
   public albums: any = [];
   public newAlbum;
   public title;
+  public newId = 100;
 
   constructor(private _albumsService: AlbumsService) {
     this.newAlbum = {} as IAlbum;
@@ -36,8 +37,11 @@ export class AlbumsComponent implements OnInit {
   }
 
   addAlbum(){
+    this.newAlbum.userId = 10;
+    this.newAlbum.id = ++this.newId;
+    this.newAlbum.title = this.title;
     this._albumsService.addAlbums(this.newAlbum).subscribe((album) => {
-      this.albums.unshift(album);
+      this.albums.push(album);
       this.newAlbum= {} as IAlbum;
     });
   }

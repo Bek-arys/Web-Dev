@@ -11,6 +11,7 @@ import { AlbumsComponent } from './albums/albums.component';
 import { AlbumDetailComponent } from './album-detail/album-detail.component';
 import { AlbumPhotosComponent } from './album-photos/album-photos.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 
 @NgModule({
@@ -22,6 +23,7 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
     AlbumDetailComponent,
     AlbumPhotosComponent,
     NavBarComponent,
+    NotFoundComponent,
   ],
   imports: [
     BrowserModule,

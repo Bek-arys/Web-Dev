@@ -1,5 +1,5 @@
 <div *ngFor="let product of products">
-    <div *ngIf="categoryName && categoryName.toLowerCase() == product.category.toLowerCase()">
+    <div *ngIf="product.category == categoryName">
       <app-product-item [product]="product" (remove)="remove($event)"></app-product-item>
     </div>
   </div>

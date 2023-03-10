@@ -28,6 +28,7 @@ export class AlbumsService {
   deleteAlbums(id : number) : Observable<IAlbum>{
       return this.http.delete<IAlbum>(`${this._url}/albums/${id}`);
   }
+  
   addAlbums(album: IAlbum): Observable<IAlbum> {
     return this.http.post<IAlbum>(`${this._url}/albums`, album);
   }

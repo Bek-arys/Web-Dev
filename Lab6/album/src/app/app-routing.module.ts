@@ -5,6 +5,7 @@ import { AlbumDetailComponent } from './album-detail/album-detail.component';
 import { AlbumPhotosComponent } from './album-photos/album-photos.component';
 import { AlbumsComponent } from './albums/albums.component';
 import { HomeComponent } from './home/home.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 const routes: Routes = [
   {path: "", redirectTo: "/home", pathMatch: 'full'},
@@ -13,7 +14,7 @@ const routes: Routes = [
   {path: "albums", component: AlbumsComponent},
   {path: "albums/:id", component: AlbumDetailComponent},
   {path : 'albums/:id/photos', component : AlbumPhotosComponent},
-  {path: "**", redirectTo: ''}
+  {path: "**", component: NotFoundComponent}
 ];
 
 @NgModule({
