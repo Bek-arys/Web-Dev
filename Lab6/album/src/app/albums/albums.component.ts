@@ -14,6 +14,7 @@ export class AlbumsComponent implements OnInit {
   public newAlbum;
   public title;
   public newId = 100;
+  public loaded = false;
 
   constructor(private _albumsService: AlbumsService) {
     this.newAlbum = {} as IAlbum;
@@ -21,7 +22,10 @@ export class AlbumsComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.getAlbums();
+    setTimeout(() => {
+      this.getAlbums();
+      this.loaded = true;
+    }, 1000);
   }
 
   getAlbums(){
